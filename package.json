@@ -1,0 +1,25 @@
+{
+	"name": "sovereigncommonsdistributed",
+	"type": "module",
+	"version": "0.0.1",
+	"main": "none",
+	"scripts": {
+		"dev:v1.0.0": "gulp serve -f ./gulpfile.dev.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"browser-sync": "^3.0.4",
+		"gulp": "^5.0.1"
+	},
+	"bugs": {
+		"url": "https://github.com/tiebacktechnologies-nativewebfederation/sovereigncommonsdistributed/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tiebacktechnologies-nativewebfederation/sovereigncommonsdistributed.git"
+	},
+	"author": "Cody S. Carlson",
+	"description": "Houses all developments, variants, specifications & documentation, audits, tests and benchmarking for the RMD (Remote Module Definition) pattern, its descendants, its ancestors and associated technologies.",
+	"homepage": "https://github.com/tiebacktechnologies-nativewebfederation/sovereigncommonsdistributed#readme",
+	"license": "MIT"
+}
