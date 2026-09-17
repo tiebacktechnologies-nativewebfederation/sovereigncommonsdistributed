@@ -1,7 +1,9 @@
-MIT License
+Sovereign Commons Distributed: Reference Implementations for the RMD Pattern
+Copyright (c) 2026 Cody S. Carlson & Native Web Federation and Tieback Technologies LLC
 
-Copyright (c) 2026 tiebacktechnologies.nativewebfederation
-
+==============================================================================
+SOFTWARE LICENSE: MIT
+==============================================================================
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -19,3 +21,19 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+==============================================================================
+SPECIFICATION & DOCUMENTATION LICENSE: CC BY 4.0
+==============================================================================
+All design patterns, structural specifications, architectural texts, and 
+research bed document files contained within this repository are licensed 
+under the Creative Commons Attribution 4.0 International License.
+
+To view a copy of this license, visit:
+http://creativecommons.org
+
+Under this license, you are free to Share (copy and redistribute the material 
+in any medium or format) and Adapt (remix, transform, and build upon the 
+material for any purpose, even commercially), under the following terms:
+- Attribution: You must give appropriate credit, provide a link to the license, 
+  and indicate if changes were made.
