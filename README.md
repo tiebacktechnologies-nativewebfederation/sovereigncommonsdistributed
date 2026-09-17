@@ -2,6 +2,7 @@
 Houses all developments, variants, specifications & documentation, audits, tests and benchmarking for the RMD (Remote Module Definition) pattern, its descendants, its ancestors and associated technologies.
 
 [![License: MIT](https://shields.io)](https://opensource.org)
+[![Docs: CC BY 4.0](https://shields.io)](https://creativecommons.org)
 [![Ecosystem: Native Web](https://shields.io)]()
 [![Development Status: Active Alpha](https://shields.io)]()
 
@@ -28,8 +29,8 @@ This project operates under a model of **radical transparency**. Our code spikes
 | **Phase 2** | Native MFE Protocol & Orchestration Layer | Months 4–6 | ⚪ Planned | Secondary Tier Seed Grant |
 | **Phase 3** | Sovereign Data Ownership (1-to-Many Federation) | Months 7–12 | ⚪ Planned | Deep Tech Infrastructure Funding |
 | **Phase 4** | Federated Platform Ecosystem (Many-to-Many Network)| Months 13–18| ⚪ Planned | Global Ecosystem Grants |
-| **Phase 5** | Content Delivery Network | Months 19-21 | ⚪ Planned | Global Ecosystem Grants |
-| **Phase 6** | Open WebSDK | Months 22-24 | ⚪ Planned | Global Ecosystem Grants |
+| **Phase 5** | Content Delivery Network | Months 19–21 | ⚪ Planned | Global Ecosystem Grants |
+| **Phase 6** | Open WebSDK | Months 22–24 | ⚪ Planned | Global Ecosystem Grants |
 | **Phase 7** | Formal Independent Standards Body & Conformance | Months 24+ | ⚪ Visionary | Corporate Sponsorship |
 
 ---
@@ -68,7 +69,11 @@ This architecture is the core subject of the upcoming textbook: **"MagazineJS - 
 
 ## 📄 License
 
-This reference implementation, the core specification patterns, and all associated standard boilerplates are proudly contributed to the global digital commons under the **MIT License**. Anyone can build on, extend, or utilize this paradigm for free, natively, forever.
+This project's code, native reference implementations, and software boilerplates are distributed under the **MIT License**. 
+
+All architectural blueprints, text specifications, design patterns, and formal research documentation are distributed under the **Creative Commons Attribution 4.0 International (CC BY 4.0) License**. 
+
+Anyone is free to build on, extend, or utilize this paradigm commercially or non-commercially, provided appropriate credit is given to Native Web Federation.
 
 ---
 *This repository is actively updated across our public milestone blocks. Watch this space or star the repo to track live execution.*
