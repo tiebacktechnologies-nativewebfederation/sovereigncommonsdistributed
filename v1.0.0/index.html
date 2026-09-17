@@ -3,11 +3,28 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <base href="/" target="_top" />
+        <base href="./" target="_top" />
         <title>Phase N</title>
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+        <link href="./styles/reset.css" rel="stylesheet" />
+        <link href="./styles/theme.css" rel="stylesheet" />
+        <link href="./styles/main.css" rel="stylesheet" />
+        <script src="./phase0/customelement/custom.element.js"></script>
     </head>
     <body>
-        <iframe src="./path/to/variant.rmd.html" is="as-frameless"></iframe>
+        <header class="app header">
+            <a class="header branding" href="/">
+                <h1 class="branding title">Sovereign Commons Distributed</h1>
+            </a>
+        </header>
+        <main class="app body">
+            <section class="body catalog">
+                <details id="/phases/0/custom-element" class="catalog section" open>
+                    <summary class="section title">Custom Element</summary>
+                    <iframe src="./phase0/customelement/customelement.rmd.html" is="scd-partial"></iframe>
+                </details>
+            </section>
+        </main>
+        <footer class="app footer"></footer>
     </body>
 </html>

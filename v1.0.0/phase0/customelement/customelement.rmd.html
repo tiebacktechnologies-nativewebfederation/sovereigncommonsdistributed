@@ -1,0 +1,37 @@
+
+
+<body>
+    <div class="partial content">
+        <h2>Custom Element Partial</h2>
+        <p>
+            We simply use a Custom Element that extends the &lt;iframe&gt;, and use its <code>contentDocument</code> to look for an element whose class is <code>.partial.content</code>.
+            Then, in our Custom Element, we simply set <code>this.outerHTML</code> to the target content's <code>outerHTML</code>, which replaces the &lt;iframe&gt;.
+        </p>
+        <h3>The Drawback</h3>
+        <p>
+            This is excellent as we now have a means in frontend technology to effectively have partials/includes – a long-awaited solution to a frustration many developers have endured over, 
+            arguably, more than two decades.
+        </p>
+        <p>
+            However, while initially small, there <i>is</i> some degree of overhead for this implementation as every site across The Web that wants partials must repeat this same Custom Element, 
+            making adoption less likely and increasing entropy right out of the gates. As the solution scales, that entropy only increases.
+        </p>
+        <p>
+            Additionally, this approach is likely to stall out in scalability as the Custom Element, will necessarily bear assumptions about the partial that the Custom Element, itself, 
+            should not be aware of; that is, <i>Content/Pathological Coupling</i> where the outer module must know the internal workings of the internal one. Even simple assumptions 
+            about styling begin to embellish our scalability issues where we will need stronger & stronger and more & more clever conventions that will increase our entropy and demand 
+            more heed in how we reuse this component.
+        </p>
+        <h3>The Big Question</h3>
+        <p>
+            What if there was a way we could do this without having to leverage a Custom Element at all? What if there was a <i>pure</i> W3C-based, standard way to accomplish this without 
+            <i>any</i> boilerplate whatsoever?
+        </p>
+        <h3>The Secret Sauce</h3>
+        <p>
+            There <b><i>is</i></b> a better way. We aim to disclose this secret, openly, for all to use freely in a pure W3C standard which documents and benchmarks as many aspects as 
+            possible for its adoption with formal Gang of Four style specifications. With your help, this code repository will serve as the <i>official, publicly accessible Open Standard</i>, 
+            free for anybody to use. And we promise there is <i>way</i> more in store. Please help us evolve The Web and facilitate an Open Internet.
+        </p>
+    </div>
+</body>

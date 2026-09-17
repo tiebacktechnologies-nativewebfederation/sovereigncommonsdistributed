@@ -1,0 +1,61 @@
+
+@import "./variables.css";
+
+:root {
+    --scroll-smooth: smooth;
+    --scroll-margin-block: var(--header-height);
+}
+
+:root {
+    --offset-xxs: 0dvw;
+    --offset-xs:  2dvw;
+    --offset-sm:  2dvw;
+    --offset-md:  8dvw;
+    --offset-lg:  8dvw;
+    --offset-xl:  6dvw;
+    --offset-xxl: 8dvw;
+    --offset-fs:  0dvw;  /* fullscreen */
+    --offset: var(--offset-md);  /* default */
+    --device: mobile;  /* mobile (xs-sm), tablet (sm-md), desktop (md-lg), kiosk (xl+) */
+    container: --root-container / inline-size;
+    @media screen and (min-width: 320px) {
+        --device: mobile;
+        --offset: var(--offset-xs);
+    }
+    @media screen and (min-width: 640px) {
+        --device: tablet;
+        --offset: var(--offset-sm);
+    }
+    @media screen and (min-width: 1028px) {
+        --device: desktop;
+        --offset: var(--offset-md);
+    }
+    @media screen and (min-width: 2160px) {
+        --device: kiosk;
+        --offset: var(--offset-xl);
+    }
+}
+
+html {
+    --text-1: var(--gray-9);
+    --text-2: var(--gray-7);
+    font-family: system-ui;
+    scroll-behavior: var(--scroll-smooth);
+    scrollbar-width: thin;
+
+    @media (--OSdark) {
+        --text-1: var(--gray-1);
+        --text-2: var(--gray-2);
+    }
+    
+}
+
+body {}
+
+main {
+    min-height: 100dvh;
+}
+
+:target {
+    scroll-margin-block: var(--scroll-margin-block);
+}

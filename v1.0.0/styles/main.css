@@ -1,0 +1,73 @@
+
+:root {
+    --header-height: var(--size-px-10);
+}
+
+:root {
+    --color-background: var(--sand-0);
+    --color-text: var(--sand-12);
+    --color-primary: var(--gray-11);
+    --color-secondary: var(--teal-9);
+    --color-callout: var(--sand-2);
+}
+
+:root {
+    --color-background: var(--gray-0);
+    --color-text: var(--gray-11);
+    --color-primary: var(--blue-7);
+    --color-secondary: var(--indigo-8);
+    --color-callout: var(--green-7);
+}
+
+body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+.app.header {
+    display: flex;
+    align-items: center;
+    padding-inline: var(--offset);
+    min-height: var(--header-height);
+    background-color: var(--pink-9);
+    background-color: var(--color-primary);
+    
+    .header.branding {
+        text-decoration: none;
+        color: inherit;
+        
+        .branding.title {
+            color: var(--color-background);
+        }
+        
+    }
+    
+}
+
+.app.body {
+    padding-block: var(--offset);
+    
+    .body.catalog {
+        
+        .catalog.section {
+            /* border: solid 1px tomato; */
+            margin-block: var(--size-px-5);
+            padding-inline: var(--offset);
+            &:first-of-type {
+                margin-block-start: 0;
+            }
+            &:last-of-type {
+                margin-block-end: 0;
+            }
+            
+            .section.title {
+                color: var(--color-primary);
+            }
+            
+        }
+        
+    }
+    
+}
+
+.app.footer {}
