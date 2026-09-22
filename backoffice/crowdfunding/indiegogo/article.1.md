@@ -101,7 +101,7 @@ Essentially, we leverage a type of IoC (Inversion of Control) on the Phase 0 sol
         </style>
         <h2 class="my heading">Native Partial</h2>
     </template>
-    <script>  <!-- this can even be a reusable script -->
+    <script>  // this can even be a reusable script
         const { content } = document.querySelector('template');
         frameElement.replaceWith(content);
     </script>
@@ -154,7 +154,7 @@ Again, all phases have been proofed out already; we are simply seeking Open Stan
 - The Next Step: We are actively moving this from our public alpha playground into our new repository, [Sovereign Commons Distributed](https://github.com/tiebacktechnologies-nativewebfederation/sovereigncommonsdistributed), to create a hardened, production-grade open standard managed by the Native Web Federation (us).
 - The Funding Split: We are currently preparing multi-phase research grants for elite digital-commons committees (like NLnet, Mozilla, the Sovereign Tech Fund, and others).
   - The Grant Scope: Institutional funding goes strictly toward future engineering deliverables — writing automated test suites, verifying variants, and recording authoritative performance benchmarks.
-  - The Indiegogo Scope: Grant review boards take 3 to 5 months to approve capital. We need a temporary crowdfunding life raft right now to fund our pre-launch publishing setup, cover the marketing costs for our textbook MagazineJS, and keep our three-person team securely housed and operating while the grant pipelines clear.
+  - The Indiegogo Scope: Grant review boards take 3 to 5 months to approve capital. **We need a temporary crowdfunding life raft right now to fund our pre-launch** and publishing setup, cover the marketing costs for our textbook MagazineJS, and keep our three-person team securely housed and operating while the grant pipelines clear.
 - More Content to Come: We plan to release more articles as part of this series whenever we've completed each phase of grants & deliverables to keep the community up to date with our discoveries and developments.
 
 <br />
