@@ -18,7 +18,7 @@ By backing this campaign today, you are doing two things: pre-ordering the defin
 
 Let’s talk about transparency. We have spent the last seven months building the foundational alpha architectures for this paradigm. The theory is sound, and the code spikes are live in our public repository, [**Sovereign Commons Distributed**](https://github.com/tiebacktechnologies-nativewebfederation/sovereigncommonsdistributed).
 
-We are currently preparing massive, multi-phase grant proposals for elite open-source foundations – including the [NLnet Foundation](https://nlnet.nl/), [Mozilla (MOSS)](https://www.mozilla.org/), and the [Sovereign Tech Fund](https://www.sovereign.tech/). However, those institutional review boards operate on a strict 3-to-5-month administrative lag. Furthermore, grant capital is rigidly locked to future deliverables – it cannot retroactively fund personal survival or cover printing and marketing costs.
+We are currently preparing massive, multi-phase grant proposals for elite open-source foundations – including the [NLnet Foundation](https://nlnet.nl/), [Mozilla (MOSS)](https://www.mozilla.org/), the [Sovereign Tech Fund](https://www.sovereign.tech/), and others. However, those institutional review boards operate on a strict 3-to-5-month administrative lag. Furthermore, grant capital is rigidly locked to future deliverables – it cannot retroactively fund personal survival or cover printing and marketing costs.
 
 - **What this campaign IS for:** This is an intentional operational bridge and an SOS to keep us going on prep work until the open standards committees approve funding. It directly funds our immediate apartment rents and baseline cost-of-living expenses during this multi-month review window, ensuring that our Principal Architect (**Cody Carlson**), our Engineering Assistant (**Julio Sanchez**), and our QA Automation Engineer (**Mike Savino**) do not lose our homes or offices while awaiting grant activation. It also finances the print run, shipping, and marketing distribution of the textbook, MagazineJS.
 
@@ -37,7 +37,7 @@ RMD natively solves the decades-long frustration of not having native browser HT
 We shift the paradigm from centralized data silos back to the user. RMD allows for native data sovereignty where user-generated content is owned, housed, and governed entirely by the user on their own storage boundary – all without a server. Companies can even stack a server behind this protocol in their own apps, allowing them to facilitate user-generated content written to the user's storage boundary that the app then consumes remotely.
 
 #### 3. Cross-Domain Federation (Phase 4)
-We are fully realizing Ward Cunningham's legendary vision for the _Smallest Federated Wiki_, but scaling it to support _any_ digital application or platform. Websites and webapps can natively point to one another, mirror code layers, and selectively swap out content for preferred edits, distinct components, or updated versions across different domains smoothly. These new types of websites and web architectures will fundamentally create entirely new industries.
+We are fully realizing Ward Cunningham's legendary vision for the _Smallest Federated Wiki_, but scaling it to support _any_ digital application or platform. Websites and webapps can natively point to one another, mirror code layers, and selectively swap out content for preferred edits, distinct components, or updated versions across different domains smoothly. These new types of websites and web architectures will fundamentally create entirely new frameworks, businesses, and even potential industries.
 
 #### 4. The Content Domain Name Server (CDNS) (Phase 5)
 The technology allows a new type of web architecture that acts like a cross between a CDN (Content Delivery Network) and a DNS (Domain Name Server) for content & components themselves – a "CDNS", if you will. A developer can request a component at a stable URL from the CDNS, and it will inspect the URL structure to return the most appropriate, geographically closest, localized, or internationalized version of that content dynamically based on URL parameter directives at that particular "_WebSlot_". WebSlots in the CDNS can even be used for requesting critical platform content, such as requesting Terms And Conditions (TAC) text from known, verified entities and companies – or for pointing to top-performance components or handling deprecations warnings and other issues. Simple and advanced WebSlot _Parameter Directives_ can be used to modify the final output of that WebSlot (the content or component).
@@ -155,8 +155,8 @@ Because Indiegogo uses a strict **Fixed Funding** mechanism, we must hit this ta
 - https://cscarlson.github.io/src/app/children/book/cover/design.rmd.html
 
 #### Cody Carlson
-- Website: https://cscarlson.github.io/
-- LinkedIn: https://www.linkedin.com/in/cody-s-carlson-1b837259/
+- Website: https://cscarlson.github.io
+- LinkedIn: https://www.linkedin.com/in/cody-s-carlson-1b837259
 - GitHub: https://github.com/cScarlson
 
 #### Julio Parra Sanchez
