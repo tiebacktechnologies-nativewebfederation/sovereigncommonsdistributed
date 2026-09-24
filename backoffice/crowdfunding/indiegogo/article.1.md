@@ -7,12 +7,17 @@ For decades, web developers have complained about the lack of native, zero-depen
 
 We were told wrong.
 
-The **Remote Module Definition (RMD)** pattern removes this bottleneck natively inside the browser’s raw engine. By returning to first principles, we have turned the web into an open plugin architecture — eliminating framework technical debt, restoring data sovereignty, and setting the baseline for entirely new web architectures and new web industries. Here is the code executing natively today:
+The **Remote Module Definition (RMD)** pattern removes this bottleneck natively inside the browser’s raw engine. By returning to first principles, we have turned the web into an open plugin architecture — eliminating framework technical debt, restoring data sovereignty, and setting the baseline for entirely new web architectures and new web markets. Here is the code executing natively today:
 
 ### A Quick [Long] History
-This dilemma dates back to StackOverflow articles from the early 2010s, even the pre-StackOverflow era in the early 2000s & 1990s: Apache SSI (Server Side Includes) and even the great Frameset debate. These all generally used ugly hacks, even taking ideas around "Hidden Iframes", but in a much different way than the RMD pattern uses them. Around 2013, the W3C introduced the [_HTML Imports_](https://www.w3.org/TR/html-imports/) spec. However, it was deprecated in 2023. Here are a couple of StackOverflow posts showing how far back this goes on record; [one from 2012](https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file) and [the other from 2011](https://stackoverflow.com/questions/7542872/how-to-include-one-html-file-into-another). StackOverflow is also packed with many [threads about HTML Imports](https://stackoverflow.com/questions/60116582/how-to-import-web-component-custom-html-element-defined-in-an-html-file-in-ano), not long before the spec was deprecated. Even famous creator of CSS Tricks, Chris Coyier, is seen in the comments section [on his platform discussing HTML Imports, as far back as 2013](https://css-tricks.com/modular-future-web-components/#comment-653576).
+This dilemma dates back to StackOverflow articles from the early 2010s, even the pre-StackOverflow era in the early 2000s & 1990s: Apache SSI (Server Side Includes) and even the great Frameset debate. These were all valiant efforts but, generally, used ugly hacks, even taking ideas around "Hidden Iframes", but in a much different way than the RMD pattern uses them. Around 2013, the W3C introduced the [_HTML Imports_](https://www.w3.org/TR/html-imports/) spec, perhaps the most valiant attempt yet. Unfortunately, it was deprecated in 2023. Here are a couple of StackOverflow posts showing how far back this goes on official record; [one from 2012](https://stackoverflow.com/questions/8988855/include-another-html-file-in-a-html-file) and [the other from 2011](https://stackoverflow.com/questions/7542872/how-to-include-one-html-file-into-another). StackOverflow has no shortage of [threads about HTML Imports](https://stackoverflow.com/questions/60116582/how-to-import-web-component-custom-html-element-defined-in-an-html-file-in-ano), not long before the spec was deprecated. Even famous creator of CSS Tricks, Chris Coyier, can be seen in the comments section [on his platform discussing HTML Imports, as far back as 2013](https://css-tricks.com/modular-future-web-components/#comment-653576). The community has long been asking for a specification like HTML Imports and, generally, a native `<include>` tag but the specifications & conversations always stall out around the same four questions, and we have the answers to them.
 
-It is clear that the demand from the web development community for this functionality has been around for decades. We solve this problem and much more.
+- What happens on error?
+- What happens on delayed loading?
+- How are CSS styles scoped?
+- What happens to scripts inside?
+
+It is clear that the demand from the web development community for this functionality has been around for decades. We applaud the valiant attempts before us as we solve this problem and much more beyond.
 
 ### The Origin Of The RMD Pattern: a custom element (Phase 0).
 
@@ -125,6 +130,18 @@ Essentially, we leverage a type of IoC (Inversion of Control) on the Phase 0 sol
 ### The Breakdown
 We delegate all responsibilities & assumptions to the RMD, itself, allowing it to become an _HTML Service_ simply governed by the iframe interface and its own mechanisms. By the time the browser reaches the `<script>`, the RMD simply queries its own document for a target `<template>`, destructures the `DocumentFramement` that is its `content` property, and simply swaps the `iframe` in the _parent frame_ by calling `frameElement.replaceWith` and passing in the document fragment node.
 
+### The Answers
+Largely, we don't even answer these questions, ourselves, because they are answered by the iframe spec, itself.
+
+#### What happens on error?
+Iframes provide an `error` event, granting the developer a way to handle it any way they wish; this could be removing it from the DOM or a simple one-liner: `<iframe onerror="e => this.src='404.html'">`.
+#### What happens on delayed loading?
+As you'll find out below, we have prototyped two ways to handle this with Skeleton UIs.
+#### How are CSS styles scoped?
+After looking at the code above, it becomes very straight-forward. The styles simply get injected with the content and we believe we can make this even better.
+#### What happens to scripts inside?
+LRP (Long Running Processes) such as event-listeners should simply move their frame to the top frame's head or a virtual `<service>` or `<context>` element in the head; non-LRPs don't have to worry about anything. We also believe we can improve this (see Phase 7, W3C Spec Proposal).
+
 ### Limitations
 We have yet to come up with many limitations with this pattern at Native Web Federation. It seems to scale in just about every direction you need it to. We've prototyped many variants and plan to explore even more. In fact, Native Web Federation has brought this pattern to scale all the way into entire websites that load quickly, and categorically brand new types of web architectures. Other variants we've explored include _Native Skeleton UIs_ where either the host element simply targets and styles the iframes with arbitrary dimensions and gray backgrounds before they're replaced, or the RMD, itself, provides its own `<body>` element with an animation before the iframe is replaced. These variants and many more have already been pioneered in our alpha architecture & playground, proving its mechanical viability. We need the community's help on exploring more variants, creating Reference Implementations, building specifications & documentation, and testing & benchmarking this phase alongside each next phase for this pattern.
 
@@ -136,7 +153,7 @@ Corporate tech giants lock developers into a perpetual loop of framework version
 ### The Consequences & Damage
 Other than the risk of stalling out their career when the next best framework comes along, all of the artificial state of crisis leads to much worse outcomes that impact the bottom line for both the developer and the organization caught in the crossfire with them. Eventually engineers begin to see some level of burnout, if only from managing the heavy tooling-bloat inherent to the frameworks so they can actually live up to their full promise. Organizations end up having to pay for man-hours to grapple with such unmanageable technical debt and, still, are looking forward to higher enterprise cloud bills and artificial churn on their employees. It's an artificial _Product Stickiness_, and we plan to unstick it to allow native, Open Standards to compete with the quicksand of proprietary frameworks.
 
-## Part 4: New Web Architectures & New Industries
+## Part 4: New Web Architectures & New Markets
 We haven't just solved the native partial constraint; we have used the RMD blueprint to go way further. The technical implementations of these advanced layers remain inside our unvetted playground & alpha architecture which has successfully proofed out every single phase beyond what this article covers:
 
 - **Native Microfrontends (Phase 2)**: Consuming MFEs across a single origin's network with zero heavy infrastructure or orchestration tools, alongside consuming MFEs across nodes in a cross-domain network and effectively turning the entire web into an open, globally competing Plugin Architecture.
@@ -144,9 +161,11 @@ We haven't just solved the native partial constraint; we have used the RMD bluep
 - **Federated Networks (Phase 4)**: A new type of Web Architecture that, in part, realizes Ward Cunningham’s Smallest Federated Wiki concept across any platform layout. Websites can natively point back to, mirror, or selectively edit layers of each other's content & components for their own flavor of what those should be.
 - **The Content Domain Name Server (CDNS) (Phase 5)**: A simple, new type of web architecture acting as a source of truth and a hybrid btween a CDN (Content Delivery Network) and a DNS (Domain Name Server) for individual web component lookup — allowing for stabile URLs to be inspected and dynamically route geographically closer, localized, or internationalized components from stable, immutable addresses. Organizations can create their own CDNS systems for their own commercial purposes.
 - **The Open WebSDK (Phase 6)**: An incredibly extensible, native SDK framework built to bridge proprietary legacy apps directly into native browser velocities.
-- **Native W3C Specification Proposal (Phase 7)**: With our demonstrations, tests, specifications & documentation and benchmark data in hand, we are empowered to work with other Open Standards bodies like the W3C to propose specifications they can adopt and facilitate browser manufacturers to implement native elements that provide such functionality in the most streamlined ways.
+- **Native W3C Specification Proposal (Phase 7)**: With our demonstrations, tests, specifications & documentation and benchmark data in hand, we are empowered to work with other Open Standards bodies like the W3C to propose specifications they can adopt and facilitate browser manufacturers to implement native elements that provide such functionality in the most streamlined ways. We plan to prototype all of this into a real native Webkit or Blink tagName that allows all the functionality & discovery to exist as a working W3C element that can be easily handed over to browsers to be implemented. We are HTML and JavaScript experts – not experts in WebIDL (Interface Definition Language), the bridge between JavaScript and C++. Funding for this phase will go into AI and employment for a head specialist to help us literally make all of the above come completely true with a single tagName for the `<service>` element. We can make this happen for once and for literally all. The Web deserves better. Developers deserve better. The world has been waiting long enough for this and more.
 
-Additionally, our research will cover whether or not the foundational pattern naturally works as an active signal-jammer to unwanted bots and crawlers, potentially making CAPTCHA a thing of the past and solving the Dead Internet dilemma in defense of content authors & creators. More to come of that but, suffice to say, the Native Web Federation believes new frameworks, new businesses and even new industries will form on top of our Open Standards once funding has supported the necessary development, specifications & documentation and benchmarking necessary to facilitate this new paradigm.
+Until Phase 7, we are confident that, as a highly comfortable stretch goal, we can solve all these with pure HTML/JS & Open Standards and, at most, a tiny set of Custom Elements that will be part of the Open Standard _and_ be fully & freely available for any use; they will be accessible even by pointing to the raw file on GitHub. Any & all Custom Elements will be part of our Phase 7 W3C Specification proposal, rolled into a single native element.
+
+Additionally, our research will cover whether or not the foundational pattern naturally works as an active signal-jammer to unwanted bots and crawlers, potentially making CAPTCHA a thing of the past and solving the Dead Internet dilemma in defense of content authors & creators. More to come of that but, suffice to say, the Native Web Federation believes new frameworks, new businesses & markets will form on top of our Open Standards once funding has supported the necessary development, specifications & documentation and benchmarking necessary to facilitate this new paradigm.
 
 Again, all phases have been proofed out already; we are simply seeking Open Standards funding to build out formal specs & docs, reference implementations and variants, tests and benchmarks. But we need _your_ help with preparation for that funding.
 
@@ -194,6 +213,6 @@ Again, all phases have been proofed out already; we are simply seeking Open Stan
 
 
 # Help our team launch our Open Standards algorithm!
-Our pure native architecture solves big problems, old & new, to slash cloud costs & creates new industries. Support our book, stand up for a free internet & track our progress in the live repo!
+Our pure native architecture solves big problems, old & new, to slash cloud costs & creates new markets. Support our book, stand up for a free internet & track our progress in the live repo!
 
 [campaignURL]

@@ -6,7 +6,7 @@ Launching Tieback Technologies: Realizing the Native Web Architecture
 
 Modern web development is trapped in a state of artificial crisis. Corporate tech giants lock developers into a perpetual loop of framework version wars, forcing engineering teams to waste millions of hours chasing menial updates just to keep basic websites running. Meanwhile, user experiences suffer under massive technical debt, bloated cloud infrastructure, and heavy runtime overhead.
 
-Traditional frameworks play games and war on each other while the developer is caught in the crossfire. Developers can never truly claim mastery over one framework and move onto mastering or picking up another because they are busy chasing new versions with menial advancements.
+Traditional frameworks play games and war on each other while the developer is caught in the crossfire. Developers can never truly claim mastery over one framework and move onto mastering or picking up another because they are busy chasing new versions with menial advancements. For frameworks that lack strong documentation, it becomes a tricky task to navigate on an ongoing basis – a double hit on the developer.
 
 **We are drawing a line in the sand.**
 
@@ -20,9 +20,11 @@ Let’s talk about transparency. We have spent the last seven months building th
 
 We are currently preparing massive, multi-phase grant proposals for elite open-source foundations – including the [NLnet Foundation](https://nlnet.nl/), [Mozilla (MOSS)](https://www.mozilla.org/), the [Sovereign Tech Fund](https://www.sovereign.tech/), and others. However, those institutional review boards operate on a strict 3-to-5-month administrative lag. Furthermore, grant capital is rigidly locked to future deliverables – it cannot retroactively fund personal survival or cover printing and marketing costs.
 
-- **What this campaign IS for:** This is an intentional operational bridge and an SOS to keep us going on prep work until the open standards committees approve funding. It directly funds our immediate apartment rents and baseline cost-of-living expenses during this multi-month review window, ensuring that our Principal Architect (**Cody Carlson**), our Engineering Assistant (**Julio Sanchez**), and our QA Automation Engineer (**Mike Savino**) do not lose our homes or offices while awaiting grant activation. It also finances the print run, shipping, and marketing distribution of the textbook, MagazineJS.
+- **What this campaign IS for:** This is an intentional operational bridge and an SOS to keep us going on prep work until the open standards committees approve funding. It directly funds our immediate apartment rents and baseline cost-of-living expenses during this multi-month review window, ensuring that our Principal Architect (**Cody Carlson**), our Engineering Assistant (**Julio Parra Sanchez**), and our QA Automation Engineer (**Mike Savino**) do not lose our homes or offices while awaiting grant activation. It also finances the print run, shipping, and marketing distribution of the textbook, MagazineJS.
 
 - **What this campaign IS NOT for:** This campaign does not pay for the active engineering hours or technical milestones explicitly scoped for our upcoming institutional grants.
+
+To be clearn, we're not even asking you to back an Open _Source_ project — this is Open _Standards_ — what Open Source is built upon. By backing Open Standards you are thus backing future Open Source projects.
 
 By stacking your commercial pre-orders alongside our upcoming public grants, we show international review committees an undeniable metric: **The developer community demands an open web**. It will be used to demonstrate to these open standards bodies that there is massive real-world demand for the technology.
 
@@ -30,14 +32,14 @@ By stacking your commercial pre-orders alongside our upcoming public grants, we 
 
 The RMD architecture isn't another framework competing for your attention. It is a fundamental paradigm shift that executes natively within the browser's raw engine. Here is the architectural roadmap your backing brings to life:
 
-#### 1. The Death of Framework Bloat (Phases 1 & 2)
-RMD natively solves the decades-long frustration of not having native browser HTML partials or includes. It introduces a clean, native **Single File Component (SFC)** syntax – similar to Vue or Svelte – but completely jailbreaks the restrictions, allowing you to bypass or break out of that layout whenever you wish. A single organization can consume micro-frontends with near-zero infrastructure, and it scales that power cross-domain across the entire internet, entirely turning the Web into an open Plugin Architecture and making a new market of content & components that compete across the global internet.
+#### 1. The End of Framework Bloat (Phases 1 & 2)
+RMD natively solves the decades-long frustration of not having native browser HTML partials or includes. It introduces a clean, native **Single File Component (SFC)** syntax – similar to Vue or Svelte – but completely jailbreaks the restrictions, allowing you to bypass or break out of that layout whenever you wish. A single organization can consume micro-frontends with zero infrastructure, and it scales that power cross-domain spanning the entire internet, entirely turning the Web into an open Plugin Architecture and creating a new market of content & components that compete across the global internet.
 
 #### 2. Absolute User Data Sovereignty (Phase 3)
 We shift the paradigm from centralized data silos back to the user. RMD allows for native data sovereignty where user-generated content is owned, housed, and governed entirely by the user on their own storage boundary – all without a server. Companies can even stack a server behind this protocol in their own apps, allowing them to facilitate user-generated content written to the user's storage boundary that the app then consumes remotely.
 
 #### 3. Cross-Domain Federation (Phase 4)
-We are fully realizing Ward Cunningham's legendary vision for the _Smallest Federated Wiki_, but scaling it to support _any_ digital application or platform. Websites and webapps can natively point to one another, mirror code layers, and selectively swap out content for preferred edits, distinct components, or updated versions across different domains smoothly. These new types of websites and web architectures will fundamentally create entirely new frameworks, businesses, and even potential industries.
+We are fully realizing Ward Cunningham's legendary vision for the _Smallest Federated Wiki_, but scaling it to support _any_ digital application or platform. Websites and webapps can natively point to one another, mirror code layers, and selectively swap out content for preferred edits, distinct components, or updated versions across different domains smoothly. These new types of websites and web architectures will fundamentally create entirely new frameworks, businesses, and markets.
 
 #### 4. The Content Domain Name Server (CDNS) (Phase 5)
 The technology allows a new type of web architecture that acts like a cross between a CDN (Content Delivery Network) and a DNS (Domain Name Server) for content & components themselves – a "CDNS", if you will. A developer can request a component at a stable URL from the CDNS, and it will inspect the URL structure to return the most appropriate, geographically closest, localized, or internationalized version of that content dynamically based on URL parameter directives at that particular "_WebSlot_". WebSlots in the CDNS can even be used for requesting critical platform content, such as requesting Terms And Conditions (TAC) text from known, verified entities and companies – or for pointing to top-performance components or handling deprecations warnings and other issues. Simple and advanced WebSlot _Parameter Directives_ can be used to modify the final output of that WebSlot (the content or component).
@@ -45,17 +47,19 @@ The technology allows a new type of web architecture that acts like a cross betw
 #### 5. The Open WebSDK (Phase 6)
 To ensure friction-free adoption, we are constructing the world's most extensible **WebSDK**. Because it runs completely on native browser standards, it remains fully flexible and compatible with legacy proprietary frameworks, allowing companies to transition to native performance incrementally.
 
-#### 6. Jamming the "Dead Internet" Dilemma (Anti-Bot Paradigm)
-The RMD pattern acts as a theoretical natural signal jammer against automated AI scrapers and crawlers, providing a profound structural solution to the Dead Internet dilemma and returning power to individual content creators. Furthermore, because malicious spambots cannot natively navigate or decipher the decoupled routing layer of the architecture, it introduces a paradigm where intrusive services like **CAPTCHA may no longer be fully necessary**.
+#### 6. W3C Specification Proposals (Phase 7)
+With our demonstrations, tests, specifications & documentation and benchmark data in hand, we are empowered to work with other Open Standards bodies like the W3C to propose specifications they can adopt and facilitate browser manufacturers to implement native elements that provide such functionality in the most streamlined ways. We plan to prototype all of this into a real native Webkit or Blink tagName that allows all the functionality & discovery to exist as a working W3C element that can be easily handed over to browsers to be implemented. We are HTML and JavaScript experts – not experts in WebIDL (Interface Definition Language), the bridge between JavaScript and C++. Funding for this phase will go into AI and employment for a head specialist to help us literally make all of the above come completely true with a single tagName for the `<service>` element. We can make this happen for once and for literally all. The Web deserves better. Developers deserve better. The world has been waiting long enough for this and more.
 
-#### 7. W3C Specification Proposals
-With our demonstrations, tests, specifications & documentation and benchmark data in hand, we are empowered to work with other Open Standards bodies like the W3C to propose specifications they can adopt and facilitate browser manufacturers to implement native elements that provide such functionality in the most streamlined ways.
+#### The "Dead Internet" Dilemma and CAPTCHA
+Additionally, our research will cover whether or not the foundational pattern naturally works as an active signal-jammer to unwanted bots and crawlers, potentially making CAPTCHA a thing of the past and solving the Dead Internet dilemma in defense of content authors & creators. 
 
-With all of that, different variants we'll be developing & documenting along the way and establishing benchmark reporting, we will have positioned Native Web Federation well for becoming the Open Standards body of this new paradigm.
+Until Phase 7, we are confident that, as a highly comfortable stretch goal, we can solve all these with pure HTML/JS & Open Standards and, at most, a tiny set of Custom Elements that will be part of the Open Standard _and_ be fully & freely available for any use; they will be accessible even by pointing to the raw file on GitHub. Any & all Custom Elements will be part of our Phase 7 W3C Specification proposal, rolled into a single native element.
+
+With all of that, different variants we'll be developing & documenting along the way and establishing benchmark reporting, we will have positioned Native Web Federation well for becoming the Open Standards body of this new paradigm. The Native Web Federation believes new frameworks and new businesses & markets will form on top of our Open Standards once funding has supported the necessary development, specifications & documentation and benchmarking necessary to facilitate this new paradigm.
 
 <hr />
 
-This campaign is your portal into the next generation of web engineering. By backing us, you aren't just buying a book; you are entering a living laboratory:
+This is the real Web 2.0 and this campaign is your portal into the next generation of web engineering. By backing us, you aren't just buying a book; you are entering a living laboratory:
 
 - **Radical Transparency**: You gain direct access to our public repository, **Sovereign Commons Distributed**. You can watch our commit history, read our raw code spikes, and track our technical milestones in realtime during the grant cycles.
 - **Career Accrual**: Bring cutting-edge, native architectural patterns into your own projects today. Master concepts that make modern technical debt obsolete, positioning yourself as a principal-level authority in native web standards, tracking our new developments, and getting a front-row seat to subsequent books down the road.
@@ -97,7 +101,7 @@ To keep our entire three-person engineering team stably housed and operating saf
     </tbody>
 </table>
 
-Because Indiegogo uses a strict **Fixed Funding** mechanism, we must hit this target by the deadline or all pledges are fully returned to backers. Every single dollar raised goes directly into our structural survival pool to ensure our Principal Architect (**Cody Carlson**), Assistant Developer (**Julio Sanchez**), and QA Engineer (**Mike Savino**) remain securely housed, keeping our human infrastructure protected while the grants process.
+Because Indiegogo uses a strict **Fixed Funding** mechanism, we must hit this target by the deadline or all pledges are fully returned to backers. Every single dollar raised goes directly into our structural survival pool to ensure our Principal Architect (**Cody Carlson**), Assistant Developer (**Julio Parra Sanchez**), and QA Engineer (**Mike Savino**) remain securely housed, keeping our human infrastructure protected while the grants process.
 
 <hr />
 
